@@ -12,6 +12,9 @@
         }
 	],
     "require": {
+        "swiftmailer/swiftmailer": "5.3.*@dev",
+        "nesbot/carbon": "dev-master",
+        "phpoffice/phpexcel": "dev-master"
 	},
     "autoload": {
         "psr-4": {
