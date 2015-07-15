@@ -88,7 +88,6 @@ class SwiftMailer
             static::newMailer()->send($message);
             $success = true;
         } catch (\Exception $ex) {
-            \EhgLogDebug::repo()->addException($ex);
             $success = false;
         }
         return $success;
