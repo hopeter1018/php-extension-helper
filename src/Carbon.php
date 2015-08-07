@@ -24,7 +24,7 @@ class Carbon
      * @param \Carbon\Carbon $endDate
      * @param \Zms5\Helpers\Closure $func function ($indexDate)<br />{<br />}
      */
-    public static function loop(Carbon $startDate, Carbon $endDate, \Closure $func)
+    public static function loop(\Carbon\Carbon $startDate, \Carbon\Carbon $endDate, \Closure $func)
     {
         $indexDate = $startDate->copy();
         while ($indexDate->lt($endDate)) {
